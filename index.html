@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background: #dbe9e9;
+      }
+      img {
+        width: 3840px;
+      }
+      .container {
+        width: 100%;
+        max-width: 1280px;
+        margin: auto;
+        display: grid;
+        place-items: center;
+      }
+      .parent {
+        width: 100%;
+        display: grid;
+        place-content: center;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+      }
+      .box {
+        font-size: 2rem;
+        aspect-ratio: 1;
+        padding: 1rem;
+        display: grid;
+        place-items: center;
+        border-radius: 1rem;
+        border-style: dashed;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;
+        flex-direction: column;
+      "
+    >
+      <img src="bg.top.png" />
+      <img src="section.top.png" />
+      <div class="container">
+        <div class="parent">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+          <div class="box">4</div>
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+          <div class="box">4</div>
+        </div>
+      </div>
+      <img src="section.bottom.png" />
+      <img src="bg.bottom.png" />
+    </div>
+  </body>
+</html>
